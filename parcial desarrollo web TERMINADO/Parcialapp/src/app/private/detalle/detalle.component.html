@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="text-center">
+    <h1>DETALLE FACTURA</h1>
+  </div>
+<br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Sub Total</th>
+        <th scope="col">Creado Por</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of detalle">
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.nombre}}</td>
+        <td>{{i.cantidad}}</td>
+        <td>{{i.subtotal}}</td>
+        <td>{{i.creado_por}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
